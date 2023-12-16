@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fun and affordable vacations your way">
+    <meta name="author" content="Kayla Brown">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="budget.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    
+    <title>Budget Vacations</title>
+
+
+</head>
+
+<body>
+    <!-- Start of Header -->
+    <header>
+        <h1>Budget Vacations</h1>
+        <p>Fun and Affordable Vacations Your Way</p>
+    </header>
+
+    <!-- Start of Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Budget Vacations</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Start of Main Content -->
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" class="myForm" action="thanks.html">
+
+           <fieldset>
+            <legend>Costumer Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="999-876-1234"></label>
+            <label>Email Address*<input type="email" name="email" required></label>
+           </fieldset>
+
+           <fieldset>
+            <legend>Contact Methods</legend>
+            <label><input type="checkbox" name="text" value="chosen">Text</label>
+            <label><input type="checkbox" name="phone" value="chosen">Phone</label>
+            <label><input type="checkbox" name="email" value="chosen">Email</label>
+           </fieldset>
+
+           <fieldset>
+            <legend>Packages</legend>
+            <label><input type="radio" name="method" value="disneyland">Disneyland Package</label>
+            <label><input type="radio" name="method" value="disneyworld">Disneyworld Package</label>
+            <label><input type="radio" name="method" value="universal">Universal Florida Package</label>
+           
+            <label>Number of People Attending
+            <select name="attending">
+                <option value="none">Please Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6+">6+</option>
+            </select>
+            </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Request Information">
+        </form>
+
+    </main>
+
+    <!-- Start of Footer -->
+    <footer>
+        <p>&copy; 2023 &bull; Kayla Brown &bull; <a href="mailto:kcbrown9060@gmail.com">Email Us</a></p>
+    </footer>
+
+</body>
+</html>
